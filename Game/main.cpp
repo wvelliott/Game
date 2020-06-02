@@ -6,10 +6,30 @@
 //  Copyright © 2020 wvelliott. All rights reserved.
 //
 
+#include <SFML/Graphics.hpp>
 #include <iostream>
-
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+#include "boardManager.hpp"
+int main() {
+    int screenW = sf::VideoMode::getDesktopMode().width;
+    int screenH = sf::VideoMode::getDesktopMode().height;
+    
+    sf::RenderWindow window( sf::VideoMode(screenW , screenH), "Catan");
+    
+    while(window.isOpen()){
+        sf::Event event;
+        while(window.pollEvent(event)){
+            switch(event.type){
+                case sf::Event::Closed:
+                    window.close();
+                    break;
+            }
+        }
+        window.setFramerateLimit(30);
+        boardManager BM;
+        BM.setWindow(&window);
+        BM.setScreenSize(screenW, screenH);
+        BM.initBoard();
+        BM.drawBoard();
+    }
+    return EXIT_SUCCESS;
 }
