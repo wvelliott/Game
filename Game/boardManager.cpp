@@ -185,6 +185,7 @@ void boardManager::initBackground(sf::Vector2u windowSize){
     
 }
 void boardManager::initBoard(){
+    this -> gameFinished = false;
     sf::Vector2u windowSize = this -> window -> getSize();
     this -> tileRadius = windowSize.y/14;
     this -> initBackground(windowSize);
@@ -212,4 +213,23 @@ void boardManager::drawBoard(){
         this -> window -> draw(*t);
     }
     this -> window -> display();
+}
+void boardManager::startGame(){
+    bool finished = false;
+    while(finished != true){
+        sf::Event event;
+        while(window -> pollEvent(event)){
+            switch(event.type){
+                case sf::Event::Closed:
+                    finished = true;
+                    window -> close();
+                    break;
+            }
+        }
+        this -> drawBoard();
+    }
+}
+void boardManager::start(){
+    this -> initBoard();
+    this -> startGame();
 }

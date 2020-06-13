@@ -23,6 +23,7 @@ private:
     sf::CircleShape ocean;
     sf::Sprite background;
     sf::RenderWindow *window;
+    bool gameFinished;
     int screenW;
     int screenH;
     int tileRadius;
@@ -44,5 +45,7 @@ public:
     void setScreenSize(int W, int H);
     void initBoard();
     void drawBoard();
+    void startGame();
+    void start();
 };
 #endif /* boardManager_hpp */

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		478AC4CA24872754007CE108 /* connectServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 478AC4C824872754007CE108 /* connectServer.cpp */; };
+		478AC4CD24882343007CE108 /* gameStarter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 478AC4CB24882343007CE108 /* gameStarter.cpp */; };
+		478AC4D0248EDE8F007CE108 /* button.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 478AC4CE248EDE8F007CE108 /* button.cpp */; };
 		47A318F424831ADA0055FF1D /* libsfml-system.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 47A318EF24831ADA0055FF1D /* libsfml-system.2.5.1.dylib */; };
 		47A318F524831ADA0055FF1D /* libsfml-audio.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 47A318F024831ADA0055FF1D /* libsfml-audio.2.5.1.dylib */; };
 		47A318F624831ADA0055FF1D /* libsfml-network.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 47A318F124831ADA0055FF1D /* libsfml-network.2.5.1.dylib */; };
@@ -35,6 +38,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		478AC4C824872754007CE108 /* connectServer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = connectServer.cpp; sourceTree = "<group>"; };
+		478AC4C924872754007CE108 /* connectServer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = connectServer.hpp; sourceTree = "<group>"; };
+		478AC4CB24882343007CE108 /* gameStarter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = gameStarter.cpp; sourceTree = "<group>"; };
+		478AC4CC24882343007CE108 /* gameStarter.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = gameStarter.hpp; sourceTree = "<group>"; };
+		478AC4CE248EDE8F007CE108 /* button.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = button.cpp; sourceTree = "<group>"; };
+		478AC4CF248EDE8F007CE108 /* button.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = button.hpp; sourceTree = "<group>"; };
 		47A318EF24831ADA0055FF1D /* libsfml-system.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-system.2.5.1.dylib"; path = "External Libraries/SFML/lib/libsfml-system.2.5.1.dylib"; sourceTree = "<group>"; };
 		47A318F024831ADA0055FF1D /* libsfml-audio.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-audio.2.5.1.dylib"; path = "External Libraries/SFML/lib/libsfml-audio.2.5.1.dylib"; sourceTree = "<group>"; };
 		47A318F124831ADA0055FF1D /* libsfml-network.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-network.2.5.1.dylib"; path = "External Libraries/SFML/lib/libsfml-network.2.5.1.dylib"; sourceTree = "<group>"; };
@@ -115,6 +124,12 @@
 				47D774D7247DDBFB00A5B4F2 /* resource.hpp */,
 				47D774D9247DE90C00A5B4F2 /* settlement.cpp */,
 				47D774DA247DE90C00A5B4F2 /* settlement.hpp */,
+				478AC4C824872754007CE108 /* connectServer.cpp */,
+				478AC4C924872754007CE108 /* connectServer.hpp */,
+				478AC4CB24882343007CE108 /* gameStarter.cpp */,
+				478AC4CC24882343007CE108 /* gameStarter.hpp */,
+				478AC4CE248EDE8F007CE108 /* button.cpp */,
+				478AC4CF248EDE8F007CE108 /* button.hpp */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -195,12 +210,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				47D774C9247DCFAE00A5B4F2 /* boardManager.cpp in Sources */,
+				478AC4CA24872754007CE108 /* connectServer.cpp in Sources */,
 				47D774D8247DDBFB00A5B4F2 /* resource.cpp in Sources */,
+				478AC4D0248EDE8F007CE108 /* button.cpp in Sources */,
 				47D774CC247DD08000A5B4F2 /* resourceTile.cpp in Sources */,
 				47D774D5247DD20E00A5B4F2 /* player.cpp in Sources */,
 				47D774DB247DE90C00A5B4F2 /* settlement.cpp in Sources */,
 				47D774B1247DB5C500A5B4F2 /* main.cpp in Sources */,
 				47D774D2247DD0FB00A5B4F2 /* settlementArea.cpp in Sources */,
+				478AC4CD24882343007CE108 /* gameStarter.cpp in Sources */,
 				47D774CF247DD0C600A5B4F2 /* roadway.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
