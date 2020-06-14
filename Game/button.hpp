@@ -22,5 +22,6 @@ public:
     void setPosition(sf::Vector2f position);
     void setSize(sf::Vector2f size);
     bool checkClick(int X, int Y);
+    bool checkClick(sf::Event event);
 };
 #endif /* button_hpp */

@@ -10,6 +10,8 @@
 		478AC4CA24872754007CE108 /* connectServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 478AC4C824872754007CE108 /* connectServer.cpp */; };
 		478AC4CD24882343007CE108 /* gameStarter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 478AC4CB24882343007CE108 /* gameStarter.cpp */; };
 		478AC4D0248EDE8F007CE108 /* button.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 478AC4CE248EDE8F007CE108 /* button.cpp */; };
+		478AC4D82495B29E007CE108 /* res in CopyFiles */ = {isa = PBXBuildFile; fileRef = 478AC4D72495B29E007CE108 /* res */; };
+		478AC4DB2495C1CC007CE108 /* inputField.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 478AC4D92495C1CC007CE108 /* inputField.cpp */; };
 		47A318F424831ADA0055FF1D /* libsfml-system.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 47A318EF24831ADA0055FF1D /* libsfml-system.2.5.1.dylib */; };
 		47A318F524831ADA0055FF1D /* libsfml-audio.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 47A318F024831ADA0055FF1D /* libsfml-audio.2.5.1.dylib */; };
 		47A318F624831ADA0055FF1D /* libsfml-network.2.5.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 47A318F124831ADA0055FF1D /* libsfml-network.2.5.1.dylib */; };
@@ -26,6 +28,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		478AC4D42495B1CF007CE108 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				478AC4D82495B29E007CE108 /* res in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		47D774AB247DB5C500A5B4F2 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -44,6 +56,9 @@
 		478AC4CC24882343007CE108 /* gameStarter.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = gameStarter.hpp; sourceTree = "<group>"; };
 		478AC4CE248EDE8F007CE108 /* button.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = button.cpp; sourceTree = "<group>"; };
 		478AC4CF248EDE8F007CE108 /* button.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = button.hpp; sourceTree = "<group>"; };
+		478AC4D72495B29E007CE108 /* res */ = {isa = PBXFileReference; lastKnownFileType = folder; name = res; path = "External Libraries/res"; sourceTree = "<group>"; };
+		478AC4D92495C1CC007CE108 /* inputField.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = inputField.cpp; sourceTree = "<group>"; };
+		478AC4DA2495C1CC007CE108 /* inputField.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = inputField.hpp; sourceTree = "<group>"; };
 		47A318EF24831ADA0055FF1D /* libsfml-system.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-system.2.5.1.dylib"; path = "External Libraries/SFML/lib/libsfml-system.2.5.1.dylib"; sourceTree = "<group>"; };
 		47A318F024831ADA0055FF1D /* libsfml-audio.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-audio.2.5.1.dylib"; path = "External Libraries/SFML/lib/libsfml-audio.2.5.1.dylib"; sourceTree = "<group>"; };
 		47A318F124831ADA0055FF1D /* libsfml-network.2.5.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libsfml-network.2.5.1.dylib"; path = "External Libraries/SFML/lib/libsfml-network.2.5.1.dylib"; sourceTree = "<group>"; };
@@ -92,6 +107,7 @@
 		47D774A4247DB5C500A5B4F2 = {
 			isa = PBXGroup;
 			children = (
+				478AC4D72495B29E007CE108 /* res */,
 				47D774AF247DB5C500A5B4F2 /* Game */,
 				47D774AE247DB5C500A5B4F2 /* Products */,
 				47D774B7247DB83A00A5B4F2 /* Frameworks */,
@@ -130,6 +146,8 @@
 				478AC4CC24882343007CE108 /* gameStarter.hpp */,
 				478AC4CE248EDE8F007CE108 /* button.cpp */,
 				478AC4CF248EDE8F007CE108 /* button.hpp */,
+				478AC4D92495C1CC007CE108 /* inputField.cpp */,
+				478AC4DA2495C1CC007CE108 /* inputField.hpp */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -162,6 +180,7 @@
 				47D774A9247DB5C500A5B4F2 /* Sources */,
 				47D774AA247DB5C500A5B4F2 /* Frameworks */,
 				47D774AB247DB5C500A5B4F2 /* CopyFiles */,
+				478AC4D42495B1CF007CE108 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -220,6 +239,7 @@
 				47D774D2247DD0FB00A5B4F2 /* settlementArea.cpp in Sources */,
 				478AC4CD24882343007CE108 /* gameStarter.cpp in Sources */,
 				47D774CF247DD0C600A5B4F2 /* roadway.cpp in Sources */,
+				478AC4DB2495C1CC007CE108 /* inputField.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

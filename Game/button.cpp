@@ -9,7 +9,7 @@
 #include "button.hpp"
 void button::draw(sf::RenderWindow* window){
     window -> draw(this -> shape);
-    window -> draw(this -> shape);
+    window -> draw(this -> text);
 }
 void button::setText(std::string Text){
     this -> text.setString(Text);
@@ -28,4 +28,6 @@ void button::setSize(sf::Vector2f size){
 bool button::checkClick(int X, int Y){
     return(this -> shape.getGlobalBounds().contains(X, Y));
 }
-
+bool button::checkClick(sf::Event event){
+    return(this -> shape.getGlobalBounds().contains(event.mouseButton.x, event.mouseButton.y));
+}

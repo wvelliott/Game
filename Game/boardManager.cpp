@@ -41,11 +41,18 @@ void boardManager::setScreenSize(int W, int H){
 }
 void boardManager::initResourceTiles(sf::Vector2u windowSize){
     sf::Texture* texture = new sf::Texture();
-    if (!texture -> loadFromFile("/Users/WilliamElliott/Documents/Graph/Game/External\ Libraries/res/img/sheep.jpg"))
+//    if (!texture -> loadFromFile("/Users/WilliamElliott/Documents/Graph/Game/External\ Libraries/res/img/sheep.jpg"))
+    
+//    char *memblock = new char [18742];
+    
+    if (!texture -> loadFromFile("res/img/sheep.jpg"))
     {
         printf("error loading texture\n");
         std::string str = "pwd";
         const char *command = str.c_str();
+        system(command);
+        str = "ls ../";
+        command = str.c_str();
         system(command);
     }
     
@@ -171,7 +178,7 @@ void boardManager::initOcean(sf::Vector2u windowSize){
 }
 void boardManager::initBackground(sf::Vector2u windowSize){
     sf::Texture* texture = new sf::Texture();
-    if (!texture -> loadFromFile("/Users/WilliamElliott/Documents/Graph/Game/External\ Libraries/res/img/background.jpg"))
+    if (!texture -> loadFromFile("res/img/background.jpg"))
     {
         printf("error loading texture\n");
         std::string str = "pwd";
